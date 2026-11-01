@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects · Laila Shafiee</title>
+<meta name="description" content="Research projects by Laila Shafiee: personalized privacy education, emotion-based movie recommendation, responsible AI research, and tangible heritage interfaces.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav wrap" aria-label="Main">
+  <a href="index.html">Home</a>
+  <a href="projects.html" aria-current="page">Projects</a>
+  <a href="publications.html">Publications</a>
+</nav>
+
+<header class="hero page-hero wrap">
+  <svg class="ornament" aria-hidden="true" viewBox="0 0 120 16" fill="none" stroke="#A9C1E3" stroke-width="1.5" stroke-linecap="round"><path d="M2 8h44"/><path d="M74 8h44"/><path d="M60 2l6 6-6 6-6-6z"/></svg>
+  <h1>Projects</h1>
+  <p class="subtitle">Privacy, visualization, and tangible design</p>
+</header>
+
+<main class="wrap" style="gap: 28px">
+
+  <!-- Dissertation -->
+  <article class="card project">
+    <span class="pill">Dissertation · Advisor: <a href="https://www.usabart.nl/portfolio/#home.html">Dr. Bart Knijnenburg</a></span>
+    <h2>Personalized Privacy Education for Facebook Users</h2>
+    <p>Facebook offers dozens of privacy settings, yet users are expected to locate, understand, and manage the ones that matter to them, and many struggle to do so. Existing approaches typically rely on generic help pages and one-size-fits-all nudges, but users differ in their privacy knowledge, concerns, and areas of difficulty.</p>
+    <p><a href="https://www.ndss-symposium.org/ndss2017/usec-mini-conference-programme/work-progress-user-tailored-privacy-design/">User-Tailored Privacy (UTP)</a> addresses this by measuring each user's privacy preferences, modeling them, and adapting support to the individual. My dissertation applies UTP to privacy education to answer one question: <em>which settings does this particular user need to know about?</em> Unlike nudging, which steers behavior, education builds users' own knowledge and skills and empowers them to make informed privacy decisions.</p>
+    <p class="role"><strong>My role:</strong> I lead this project, from study design and data collection to analysis and writing.</p>
+  </article>
+
+  <!-- Movie recommender -->
+  <article class="card project">
+    <span class="pill"><a href="https://rssa.recsys.dev/">Recommender Systems for Self-Actualization (RSSA)</a> · NSF CAREER #2045153 · PI: <a href="https://www.usabart.nl/portfolio/#home.html">Dr. Bart Knijnenburg</a></span>
+    <h2>Emotion-Based Movie Recommender System</h2>
+    <p>We choose movies for how they make us feel: the joy of a comedy, the suspense of a thriller, the quiet sadness of a drama. Yet recommender systems rarely show us that emotional side. This study gives people a window into each film's emotional signature, its blend of Plutchik's eight core emotions, and lets them tune their emotional preferences in real time.</p>
+    <p>I compare two visualizations: a flower chart inspired by Plutchik's wheel of emotions, and a lollipop chart, a simple format most people already know how to read. Each comes in two views. The individual view shows one movie's signature at a time. The combined view shows all recommendations together: the movie a user hovers over appears in color, and the rest fade to gray, so users can compare one film against the whole set. Together, these designs help us understand how seeing emotions helps people explore and choose what to watch.</p>
+    <p class="role"><strong>My role:</strong> I lead this study. I designed and developed both visualizations and designed the experiment, working with fellow HATLab students on the RSSA platform.</p>
+
+    <h3 class="sub-title">Flower chart</h3>
+    <div class="shots">
+      <figure>
+        <a href="flower-individual.png"><img src="flower-individual.png" alt="Flower chart showing one movie's emotional signature" loading="lazy"></a>
+        <figcaption>Individual view</figcaption>
+      </figure>
+      <figure>
+        <a href="flower-combined.png"><img src="flower-combined.png" alt="Flower chart overlaying all recommendations' emotional signatures" loading="lazy"></a>
+        <figcaption>Combined view</figcaption>
+      </figure>
+      <figure>
+        <a href="flower-combined-hover.png"><img src="flower-combined-hover.png" alt="Flower chart combined view with the hovered movie in color and the others in gray" loading="lazy"></a>
+        <figcaption>Combined view · one movie highlighted</figcaption>
+      </figure>
+    </div>
+    <p class="demos-label">Watch the demos</p>
+    <div class="demos">
+      <figure>
+        <video controls preload="metadata" playsinline poster="flower-individual.png">
+          <source src="flower-individual-demo.mp4" type="video/mp4">
+          <a href="flower-individual-demo.mp4">Download the flower chart individual view demo</a>
+        </video>
+        <figcaption>Flower chart · individual view demo</figcaption>
+      </figure>
+      <figure>
+        <video controls preload="metadata" playsinline poster="flower-combined.png">
+          <source src="flower-combined-demo.mp4" type="video/mp4">
+          <a href="flower-combined-demo.mp4">Download the flower chart combined view demo</a>
+        </video>
+        <figcaption>Flower chart · combined view demo</figcaption>
+      </figure>
+    </div>
+
+    <h3 class="sub-title">Lollipop chart</h3>
+    <div class="shots">
+      <figure>
+        <a href="lollipop-individual.png"><img src="lollipop-individual.png" alt="Lollipop chart showing one movie's emotional signature" loading="lazy"></a>
+        <figcaption>Individual view</figcaption>
+      </figure>
+      <figure>
+        <a href="lollipop-combined.png"><img src="lollipop-combined.png" alt="Lollipop chart overlaying all recommendations' emotional signatures" loading="lazy"></a>
+        <figcaption>Combined view</figcaption>
+      </figure>
+      <figure>
+        <a href="lollipop-combined-hover.png"><img src="lollipop-combined-hover.png" alt="Lollipop chart combined view with the hovered movie in color and the others in gray" loading="lazy"></a>
+        <figcaption>Combined view · one movie highlighted</figcaption>
+      </figure>
+    </div>
+    <p class="demos-label">Watch the demos</p>
+    <div class="demos">
+      <figure>
+        <video controls preload="metadata" playsinline poster="lollipop-individual.png">
+          <source src="lollipop-individual-demo.mp4" type="video/mp4">
+          <a href="lollipop-individual-demo.mp4">Download the lollipop chart individual view demo</a>
+        </video>
+        <figcaption>Lollipop chart · individual view demo</figcaption>
+      </figure>
+      <figure>
+        <video controls preload="metadata" playsinline poster="lollipop-combined.png">
+          <source src="lollipop-combined-demo.mp4" type="video/mp4">
+          <a href="lollipop-combined-demo.mp4">Download the lollipop chart combined view demo</a>
+        </video>
+        <figcaption>Lollipop chart · combined view demo</figcaption>
+      </figure>
+    </div>
+  </article>
+
+  <!-- Responsible AI -->
+  <article class="card project">
+    <span class="pill">With <a href="https://www.usabart.nl/portfolio/#home.html">Dr. Bart Knijnenburg</a> and Dr. Jinkyung Katie Park</span>
+    <h2>Responsible Human-Centered AI Research</h2>
+    <p>Many HCI user studies now send participants' input to commercial large language models hosted on third-party servers. This project examines how researchers protect participants' privacy and welfare in these studies, combining a review of recent CHI and IUI papers with interviews with the researchers who wrote them.</p>
+    <p class="role"><strong>My role:</strong> As part of the research team, I contributed to the qualitative data analysis and wrote the first draft of the findings.</p>
+  </article>
+
+  <!-- CICI -->
+  <article class="card project">
+    <span class="pill"><a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2232690&amp;HistoricalAwards=false">NSF CICI: UCSS #2232690</a> · PI: <a href="https://datascience.columbia.edu/people/susan-e-mcgregor">Dr. Susan E. McGregor</a> (Columbia) · Clemson: <a href="https://kellycaine.com/">Dr. Kelly Caine</a>, <a href="https://www.usabart.nl/portfolio/#home.html">Dr. Bart Knijnenburg</a>, <a href="https://scholar.google.com/citations?user=zdGOjhAAAAAJ&amp;hl=en">Dr. Emily Sidnam-Mauch</a></span>
+    <h2>Usable, Secure Data Workflows for Human-Centered AI Research</h2>
+    <p>This NSF-funded collaboration develops usable, secure data workflows that help human-centered AI researchers protect participant privacy while keeping their data useful. One line of the work focuses on study planning, including a usable tool that helps researchers choose sample sizes for their studies.</p>
+    <p class="role"><strong>My role:</strong> As part of the team, I contribute citations and related-work summaries, and I collected and organized data for a survey and heuristic evaluation of existing power analysis tools.</p>
+  </article>
+
+  <!-- Tangible -->
+  <article class="card project">
+    <span class="pill">Tangible Visualization Group · <a href="https://people.computing.clemson.edu/~bullmer/">Dr. Brygg Ullmer</a></span>
+    <h2>Tangible Heritage Interfaces</h2>
+    <p>The Tangible Visualization Group builds on a vision of tangible interaction, in which digital information takes physical form: objects people can hold, turn, and arrange, with computing woven into them. Using low-cost and upcycled materials with embedded technologies such as NFC tags, the group designs interactive tokens, tiles, and the structures that hold them. Each of my prototypes explores a different purpose, from heritage-inspired design to hands-on learning about culture and language, and many draw on Arabic and Saudi heritage.</p>
+    <div class="mini-grid">
+      <div class="mini">
+        <h3>Roshn Token</h3>
+        <p>Inspired by the rawshan, the ornate wooden latticework windows of historic Jeddah, my home city in Saudi Arabia. The design was adopted into the group's Hexplinth tablet and hex drum installation (TEI 2024).</p>
+        <a class="more" href="https://doi.org/10.1145/3623509.3633354">Read the paper →</a>
+      </div>
+      <div class="mini">
+        <h3>Sandstone Hextoks</h3>
+        <p>A heritage education concept: bilingual Arabic–English tokens pairing two UNESCO World Heritage Sites, Hegra in Saudi Arabia and Mesa Verde in the United States. Turning both to the same concept (stone, marks, or dwelling) invites learners to discover how each culture shaped sandstone differently.</p>
+        <a class="more" href="https://lula6666.github.io/Sandstone-hextoks/sandstone-hextoks.html">View prototype →</a>
+      </div>
+      <div class="mini">
+        <h3>Qalam Tiles</h3>
+        <p>Developed for our research on paper-based tangibles, these tiles teach Arabic through touch: each carries a word in Kufic, Naskh, or Ruqʿa calligraphy, with an NFC tag linking to its pronunciation. Arranging them right to left on a rack, learners compose Arabic proverbs.</p>
+        <a class="more" href="https://lula6666.github.io/qalam-tiles/qalam-tiles.html">View prototype →</a>
+      </div>
+    </div>
+  </article>
+
+</main>
+
+<footer class="wrap">
+  <svg class="ornament" aria-hidden="true" viewBox="0 0 120 16" fill="none" stroke="#A9C1E3" stroke-width="1.5" stroke-linecap="round"><path d="M2 8h44"/><path d="M74 8h44"/><path d="M60 2l6 6-6 6-6-6z"/></svg>
+  <p>© 2026 Laila Shafiee · CV available on request</p>
+</footer>
+
+</body>
+</html>
